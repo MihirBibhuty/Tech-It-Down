@@ -15,7 +15,7 @@ async function connect() {
     }
     await mongoose.disconnect();
   }
-  const db = await mongoose.connect('mongodb+srv://Mihir:Mihir123@cluster0.jwmk0ep.mongodb.net/?retryWrites=true&w=majority', {
+  const db = await mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
