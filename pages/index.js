@@ -52,7 +52,7 @@ export default function Home(props) {
   return (
     <Layout>
 
-      {/* <Carousel className={classes.mt1} animation="slide">
+      <Carousel className={classes.mt1} animation="slide">
         {featuredProducts.map((product) => (
           <NextLink
             key={product._id}
@@ -68,7 +68,7 @@ export default function Home(props) {
             </Link>
           </NextLink>
         ))}
-      </Carousel> */}
+      </Carousel>
 
 
 
